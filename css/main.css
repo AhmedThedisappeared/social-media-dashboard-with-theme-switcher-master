@@ -1,0 +1,94 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--main-bg);
+}
+/* Start Header */
+header {
+    background-color: var(--head-bg);
+    border-radius: 0 0 1rem 1rem;
+}
+header .head {
+    padding-bottom: 85.5px;
+    padding-top: 40px;
+}
+.toggle-switch {
+    width: 50px;
+    height: 25px;
+    border-radius: 12.5px;
+    background-color: hsl(230, 22%, 74%);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.toggle-switch span {
+    width: 18px;
+    height: 18px;
+    right: 3px;
+    top: 50%;
+    transform:translateY(-50%) ;
+    background-color:hsl(0, 0%, 100%) ;
+}
+@media (max-width:767px){
+    .head .text {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid hsl(228, 12%, 44%);
+    }
+}
+/* End Header */
+/* Start Content */
+.content {
+    top:-2rem;
+}
+.content .card {
+    background-color: var(--card-bg);
+}
+.content .facebook {
+    border-top:5px solid var(--Facebook);
+}
+.content .twitter {
+    border-top:5px solid var(--Twitter);
+}
+.content .instagram {
+    border-radius: 0 0 5px 5px;
+    margin-top: 5px;
+}
+.content .instagram::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+    background-image: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+}
+.content .youtube {
+    border-top:5px solid var(--YouTube);
+}
+.content .card .icon span {
+    letter-spacing: -1px;
+    margin-top: 2px;
+    font-size: 14px;
+}
+.content .card article h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 0;
+}
+.content .card article h5 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.content .card .data p {
+    font-weight: 700;
+    font-size: 14px;
+}
+/* End Content */
+/* Start Overview */
+.overview .card-holder .card {
+    background-color: var(--card-bg);
+} 
+/* End  Overview */
